@@ -28,8 +28,6 @@ exports.configs = {
                 4,
                 5
             ]
-        }, {
-            "second": 30
         }
     ],
     mentioned_list: ["@all"],
