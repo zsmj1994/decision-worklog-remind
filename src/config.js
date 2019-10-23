@@ -1,9 +1,10 @@
 exports.configs = {
-    webhook: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e5931160-875b-45e0-82af-348d9d41d359',
+    webhook: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=0ea0fa1c-4870-44a1-b3aa-9baf64696fa8',
     timers: [
         {
             "hour": [
                 10,
+                11,
                 12,
                 14,
                 16,
