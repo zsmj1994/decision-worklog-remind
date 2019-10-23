@@ -1,4 +1,5 @@
 exports.configs = {
+    webhook: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e5931160-875b-45e0-82af-348d9d41d359',
     timers: [
         {
             "hour": [
@@ -27,21 +28,10 @@ exports.configs = {
                 4,
                 5
             ]
-        },
-        {
-            "hour": 17,
-            "second": [
-                0,
-                1,
-                2,
-                3,
-                4,
-                5,
-                6,
-                7,
-                8,
-                9
-            ]
+        }, {
+            "second": 30
         }
-    ]
+    ],
+    mentioned_list: ["@all"],
+    content: '帆软平台开发部提醒您:任务千万个,日志第一位。日志不规范,工资两行泪'
 } 

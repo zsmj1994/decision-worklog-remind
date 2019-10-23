@@ -4,12 +4,12 @@ const schedule = require('node-schedule');
 const configs = require('./config').configs
 
 
-const sendMsg = () => {
+const sendMsg = (configs) => {
     const data = {
         'msgtype': 'text',
         'text': {
-            'content': '杜易娜喊你记日志啦',
-            'mentioned_list': ['Abby']
+            'content': configs.content,
+            'mentioned_list': configs.mentioned_list
         }
     }
     console.log("send")
@@ -17,7 +17,7 @@ const sendMsg = () => {
     request({
         json: true,
         method: 'POST',
-        url: 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=e5931160-875b-45e0-82af-348d9d41d359',
+        url: configs.webhook,
         body: data
     }, (err, res, body) => {
 
@@ -28,7 +28,7 @@ const sendMsg = () => {
 const scheduleObjectLiteralSyntax = (configs) => {
     console.log("start")
     configs.timers.forEach(timer => {
-        schedule.scheduleJob(timer, sendMsg)
+        schedule.scheduleJob(timer, () => sendMsg(configs))
     });
 }
 
