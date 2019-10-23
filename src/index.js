@@ -12,7 +12,7 @@ const sendMsg = (configs) => {
             'mentioned_list': configs.mentioned_list
         }
     }
-    console.log("send")
+    console.log("current time", new Date())
 
     request({
         json: true,
@@ -26,7 +26,9 @@ const sendMsg = (configs) => {
 
 
 const scheduleObjectLiteralSyntax = (configs) => {
+
     console.log("start")
+
     configs.timers.forEach(timer => {
         schedule.scheduleJob(timer, () => sendMsg(configs))
     });

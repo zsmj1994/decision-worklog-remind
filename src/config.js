@@ -10,6 +10,7 @@ exports.configs = {
                 20,
                 22
             ],
+            "minute": 0,
             "dayOfWeek": [
                 1,
                 2,
