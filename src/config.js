@@ -32,6 +32,17 @@ exports.configs = {
             ]
         }
     ],
-    mentioned_list: ["@all"],
-    content: '帆软平台开发部提醒您:任务千万个,日志第一位。日志不规范,工资两行泪。\n 写完扣1'
+    msg: {
+        "msgtype": "news",
+        "news": {
+            "articles": [
+                {
+                    "title": "又到了记日志的时候啦",
+                    "description": "任务千万个 日志第一位 日志不规范 工资两行泪",
+                    "url": "",
+                    "picurl": "http://img3.doubanio.com/view/photo/l/public/p2513688980.jpg"
+                }
+            ]
+        }
+    }
 } 

@@ -5,20 +5,14 @@ const configs = require('./config').configs
 
 
 const sendMsg = (configs) => {
-    const data = {
-        'msgtype': 'text',
-        'text': {
-            'content': configs.content,
-            'mentioned_list': configs.mentioned_list
-        }
-    }
+
     console.log("current time", new Date())
 
     request({
         json: true,
         method: 'POST',
         url: configs.webhook,
-        body: data
+        body: configs.msg
     }, (err, res, body) => {
 
     })
@@ -28,7 +22,6 @@ const sendMsg = (configs) => {
 const scheduleObjectLiteralSyntax = (configs) => {
 
     console.log("start")
-
     configs.timers.forEach(timer => {
         schedule.scheduleJob(timer, () => sendMsg(configs))
     });
