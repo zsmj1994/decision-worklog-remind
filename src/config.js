@@ -40,7 +40,7 @@ exports.configs = {
                     "title": "又到了记日志的时候啦",
                     "description": "任务千万个 日志第一位 日志不规范 工资两行泪",
                     "url": "about:blank",
-                    "picurl": "http://img3.doubanio.com/view/photo/l/public/p2513688980.jpg"
+                    "picurl": "https://gss1.bdstatic.com/9vo3dSag_xI4khGkpoWK1HF6hhy/baike/w%3D268/sign=d484b58ceb1190ef01fb95d9f61a9df7/6d81800a19d8bc3ee08463ab8e8ba61ea9d345c6.jpg"
                 }
             ]
         }
