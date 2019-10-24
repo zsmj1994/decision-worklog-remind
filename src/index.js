@@ -7,6 +7,7 @@ const configs = require('./config').configs
 const sendMsg = (configs) => {
 
     console.log("current time", new Date())
+    console.log("webhook:", configs.webhook)
 
     request({
         json: true,

@@ -39,7 +39,7 @@ exports.configs = {
                 {
                     "title": "又到了记日志的时候啦",
                     "description": "任务千万个 日志第一位 日志不规范 工资两行泪",
-                    "url": "",
+                    "url": "about:blank",
                     "picurl": "http://img3.doubanio.com/view/photo/l/public/p2513688980.jpg"
                 }
             ]
