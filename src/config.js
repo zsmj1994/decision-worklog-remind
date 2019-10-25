@@ -40,7 +40,7 @@ exports.configs = {
                     "title": "又到了记日志的时候啦",
                     "description": "任务千万个 日志第一位 日志不规范 工资两行泪",
                     "url": "about:blank",
-                    "picurl": "http://i1.hdslb.com/bfs/archive/095e7f0d103231fd04ffad264cc1ab9c3fa8f694.jpg"
+                    "picurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1571988420094&di=fb5d2363c97f0d79692b66bdf9c1aef1&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201708%2F28%2F20170828184552_kv4FN.jpeg"
                 }
             ]
         }
