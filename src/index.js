@@ -20,7 +20,7 @@ const requestConfig = () => {
     return new Promise((resolve, reject) => {
         request('https://raw.githubusercontent.com/zsmj1994/decision-worklog-remind/master/config.json', (error, response, body) => {
             if (error) {
-                reject(err);
+                reject(error);
             } else {
                 resolve(JSON.parse(body));
             }
@@ -31,6 +31,7 @@ const requestConfig = () => {
 
 const scheduleObjectLiteralSyntax = (configs) => {
     console.log("start")
+    console.log(JSON.stringify(configs))
     configs.timers.forEach(timer => {
         schedule.scheduleJob(timer, () => requestConfig().then(configs => sendMsg(configs)))
     });
