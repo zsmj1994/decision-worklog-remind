@@ -31,7 +31,6 @@ const requestConfig = () => {
 
 const scheduleObjectLiteralSyntax = (configs) => {
     console.log("start")
-    console.log(JSON.stringify(configs))
     configs.timers.forEach(timer => {
         schedule.scheduleJob(timer, () => requestConfig().then(configs => sendMsg(configs)))
     });
