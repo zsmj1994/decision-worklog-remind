@@ -1,9 +1,6 @@
 const request = require('request')
 const schedule = require('node-schedule');
 
-const configs = require('./config').configs
-
-
 const sendMsg = (configs) => {
 
     console.log("current time", new Date())
@@ -19,15 +16,27 @@ const sendMsg = (configs) => {
     })
 }
 
+const requestConfig = () => {
+    return new Promise((resolve, reject) => {
+        request('https://raw.githubusercontent.com/zsmj1994/decision-worklog-remind/master/config.json', (error, response, body) => {
+            if (error) {
+                reject(err);
+            } else {
+                resolve(JSON.parse(body));
+            }
+        })
+    })
+}
+
 
 const scheduleObjectLiteralSyntax = (configs) => {
-
     console.log("start")
     configs.timers.forEach(timer => {
-        schedule.scheduleJob(timer, () => sendMsg(configs))
+        schedule.scheduleJob(timer, () => requestConfig().then(configs => sendMsg(configs)))
     });
 }
 
 
-
-scheduleObjectLiteralSyntax(configs)
+requestConfig().then(configs => {
+    scheduleObjectLiteralSyntax(configs)
+})
