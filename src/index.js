@@ -2,15 +2,16 @@ const request = require('request')
 const schedule = require('node-schedule');
 
 const sendMsg = (configs) => {
-
+    let cfg
+    configs && (cfg = configs)
     console.log("current time", new Date())
-    console.log("webhook:", configs.webhook)
+    console.log("webhook:", cfg.webhook)
 
     request({
         json: true,
         method: 'POST',
-        url: configs.webhook,
-        body: configs.msg
+        url: cfg.webhook,
+        body: cfg.msg
     }, (err, res, body) => {
 
     })
@@ -32,7 +33,7 @@ const requestConfig = () => {
 const scheduleObjectLiteralSyntax = (configs) => {
     console.log("start")
     configs.timers.forEach(timer => {
-        schedule.scheduleJob(timer, () => requestConfig().then(configs => sendMsg(configs)))
+        schedule.scheduleJob(timer, () => requestConfig().then(configs => sendMsg(configs)), error => sendMsg())
     });
 }
 
