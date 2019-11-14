@@ -4,7 +4,7 @@ const schedule = require('node-schedule');
 const sendMsg = (configs) => {
     let cfg
     configs && (cfg = configs)
-    console.log("current time", new Date())
+    console.log("current time", (new Date()).toLocaleTimeString())
     console.log("webhook:", cfg.webhook)
 
     request({
