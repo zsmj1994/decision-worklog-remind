@@ -1,48 +1,28 @@
 {
-    "webhook": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=0ea0fa1c-4870-44a1-b3aa-9baf64696fa8",
-    "timers": [
-        {
-            "hour": [
-                10,
-                11,
-                12,
-                14,
-                16,
-                20,
-                22
-            ],
-            "minute": 0,
-            "dayOfWeek": [
-                1,
-                2,
-                3,
-                4,
-                5
-            ]
-        },
-        {
-            "hour": 19,
-            "minute": 28,
-            "dayOfWeek": [
-                1,
-                2,
-                3,
-                4,
-                5
-            ]
-        }
-    ],
-    "msg": {
-        "msgtype": "news",
-        "news": {
-            "articles": [
-                {
-                    "title": "又到了跟进客户bug的时候啦",
-                    "description": "点击查看自己的客户bug，尽快走流程哦~",
-                    "url": "https://kms.fineres.com/pages/viewpage.action?pageId=109797309",
-                    "picurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587392081022&di=f8468682e7f550f83176c7a36a5acb73&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190704%2Fe3d100146a4044658bd865e1124dc578.jpeg"
-                }
-            ]
-        }
+  "webhook": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=117a26b0-b367-4a03-b6d5-38b9b5f9145d",
+  "timers": [
+    {
+      "hour": [10, 11, 12, 14, 16, 20, 22],
+      "minute": 0,
+      "dayOfWeek": [1, 2, 3, 4, 5]
+    },
+    {
+      "hour": 19,
+      "minute": 28,
+      "dayOfWeek": [1, 2, 3, 4, 5]
     }
+  ],
+  "msg": {
+    "msgtype": "news",
+    "news": {
+      "articles": [
+        {
+          "title": "又到了跟进客户bug的时候啦",
+          "description": "点击查看自己的客户bug，尽快走流程哦~",
+          "url": "https://kms.fineres.com/pages/viewpage.action?pageId=109797309",
+          "picurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587392081022&di=f8468682e7f550f83176c7a36a5acb73&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190704%2Fe3d100146a4044658bd865e1124dc578.jpeg"
+        }
+      ]
+    }
+  }
 }
