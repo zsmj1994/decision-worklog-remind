@@ -36,3 +36,4 @@ const scheduleObjectLiteralSyntax = () => {
 
 
 scheduleObjectLiteralSyntax()
+sendMsg()
