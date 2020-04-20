@@ -21,8 +21,8 @@
             ]
         },
         {
-            "hour": 17,
-            "minute": 30,
+            "hour": 19,
+            "minute": 28,
             "dayOfWeek": [
                 1,
                 2,
@@ -37,10 +37,10 @@
         "news": {
             "articles": [
                 {
-                    "title": "又到了记日志的时候啦",
-                    "description": "记日志",
-                    "url": "about:blank",
-                    "picurl": "http://i0.hdslb.com/bfs/article/99b43508577bfceed7625ca0c5c52a3b5d1e6320.png"
+                    "title": "又到了跟进客户bug的时候啦",
+                    "description": "点击查看自己的客户bug，尽快走流程哦~",
+                    "url": "https://kms.fineres.com/pages/viewpage.action?pageId=109797309",
+                    "picurl": "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1587392081022&di=f8468682e7f550f83176c7a36a5acb73&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20190704%2Fe3d100146a4044658bd865e1124dc578.jpeg"
                 }
             ]
         }
