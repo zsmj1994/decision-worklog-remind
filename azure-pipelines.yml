@@ -17,8 +17,8 @@ steps:
 - task: InstallSSHKey@0
   inputs:
     knownHostsEntry: 'root@106.54.247.111'
-    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC3rP00BVy+f1VJMm6N4z+usPMNBb5+I16xDflBEtUTZhvX0M9LQmBoRuyQZAACybEMNmAL13m0AbGHlMLi o1SzzRFSFN8Ji5ppL3zpO8hJZHra4nC6c55z4otj/Ug48KO2j6qLAwP5xN4iG4dO2VxHLjOG7CGtcGmLzlpr/1ReeXl3G/LEoBZrHHUcU2XHt0Wer/CYXc3j sQb/lccn8L7gnANlFiVZkYGy52ZNUFaQXYhLa6z+lPaS7HMzyI5NHv0K+m83tLnAgWlUJQUd9lFqrXNVpykSVKDFy0uZ2yBgfcIYhX1ofvjtMKQtqJ3CbfPk 3t+7BojXpKz1doc6O4Zv zsmj1994@gmail.com'
-    sshKeySecureFile: 'tencentPrivateKey'
+    sshPublicKey: 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDp6333TvFTciII04fCshOH2OPt8mpOQ3QFj05HYQFuPWUL+0BdqwzFQ0WQNmu1QW6QtfE2gXSzuVPTDXRMVVv4aj0dpdhRrFpQ8y4fMWe1mM18hCJ8DBwwyhR/HmC0MakmAG2kCnALOpgPWyX9qvLxJVvTUOTV5jtDj8FRzBkyESaB1Q1sNv5xg0X0rivBFWHWe3+Tk4W4HsDkijvK18d405wTrqBtgrxISVt/qm04k5fjl1wX0k0Sf7k4UG4DjRAlKeV1px+H2CBhSXdZdKOxCYpyEOpcrm08rYtuOJ/5JfyXZozUvVqEMesOKvyV+Oon6/mwb00czpg6YkCvKEHp skey-gz7ao5vj'
+    sshKeySecureFile: 'dailer_key'
 
 - script: |
     npm install -g pm2
