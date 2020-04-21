@@ -23,5 +23,6 @@ steps:
 - script: |
     npm install -g pm2
     npm install
+    git checkout matster
     pm2 deploy deploy.yaml production
   displayName: 'npm install and build'
