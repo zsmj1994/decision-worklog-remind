@@ -23,5 +23,5 @@ steps:
 - script: |
     npm install -g pm2
     npm install
-    npm run deploy
+    pm2 deploy deploy.yaml production
   displayName: 'npm install and build'
