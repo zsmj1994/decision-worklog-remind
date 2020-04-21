@@ -24,5 +24,5 @@ steps:
     npm install -g pm2
     npm install
     git checkout master
-    pm2 deploy deploy.yaml production
+    pm2 deploy deploy.yaml production setup
   displayName: 'npm install and build'
