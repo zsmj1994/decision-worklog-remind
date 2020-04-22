@@ -7,11 +7,12 @@ pool:
 steps:
   - task: SSH@0
     inputs:
-      sshEndpoint: "腾讯云"
-      runOptions: "inline"
+      sshEndpoint: '腾讯云'
+      runOptions: 'inline'
       inline: |
         cd ./dailer/decision-worklog-remind
         echo "start fetching"
         git fetch --all
         pm2 start deploy.yaml
-      readyTimeout: "200000"
+      failOnStdErr: false
+      readyTimeout: '200000'
