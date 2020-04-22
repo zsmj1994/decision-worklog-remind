@@ -10,6 +10,7 @@ steps:
       sshEndpoint: '腾讯云'
       runOptions: 'inline'
       inline: |
+        #!/bin/sh
         cd ./dailer/decision-worklog-remind
         echo "start fetching"
         git fetch --all
