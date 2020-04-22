@@ -16,8 +16,8 @@ steps:
     sshEndpoint: '腾讯云'
     runOptions: 'inline'
     inline: |
+      git fetch --all
       cd ./dailer/decision-worklog-remind
-      ls
       pm2 start deploy.yaml
     readyTimeout: '200000'
 
