@@ -5,7 +5,7 @@
       "hour": 10,
       "minute": 0,
       "dayOfWeek": [1, 4]
-    },
+    }
   ],
   "msg": {
     "msgtype": "news",
