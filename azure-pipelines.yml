@@ -5,10 +5,6 @@ pool:
   vmImage: "ubuntu-latest"
 
 steps:
-
-  - task: CmdLine@2
-    inputs:
-      script: 'ping 106.54.247.111'
   - task: SSH@0
     inputs:
       sshEndpoint: '腾讯云'
