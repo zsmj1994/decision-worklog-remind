@@ -6,17 +6,3 @@ apps:
       COMMON_VARIABLE: true
     env_production:
       NODE_ENV: production
-
-deploy: # 部署脚本
-  production: # 生产环境
-    user: root # 服务器的用户名
-    host: 106.54.247.111 # 服务器的ip地址
-    port: 22 # ssh端口
-    ref: origin/master # 要拉取的git分支
-    ssh_options: StrictHostKeyChecking=no # SSH 公钥检查
-    repo: git@github.com:zsmj1994/decision-worklog-remind.git # 远程仓库地址
-    path: /root/dailer/decision-worklog-remind # 拉取到服务器某个目录下
-    pre-deploy-local: echo 'start'
-    post-deploy: npm install &&  pm2 reload deploy.yaml --env production --force # 部署后执行
-    env:
-      NODE_ENV: production
