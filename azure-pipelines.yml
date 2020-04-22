@@ -10,17 +10,10 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '10.x'
-  displayName: 'Install Node.js'
 - task: SSH@0
   inputs:
     sshEndpoint: '腾讯云'
     runOptions: 'commands'
     commands: 'ls'
     readyTimeout: '20000'
-
-- script: |
-    npm install -g pm2
-  displayName: 'npm install and build'
+    displayName: '执行pm2命令'
