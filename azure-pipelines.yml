@@ -10,10 +10,12 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
 - task: SSH@0
   inputs:
     sshEndpoint: '腾讯云'
     runOptions: 'commands'
-    commands: 'ls'
+    commands: |
+      cd /root/dailer/decision-worklog-remind
+      pm2 start deploy.ymal
     readyTimeout: '20000'
-    displayName: '执行pm2命令'
