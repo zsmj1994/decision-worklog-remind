@@ -16,7 +16,7 @@ steps:
     sshEndpoint: '腾讯云'
     runOptions: 'commands'
     commands: |
-      cd /root/dailer/decision-worklog-remind
+      cd ./dailer/decision-worklog-remind
       ls
       pm2 start deploy.yaml
     readyTimeout: '20000'
