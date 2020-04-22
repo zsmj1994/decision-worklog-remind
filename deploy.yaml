@@ -1,7 +1,7 @@
 # deploy.yaml
 apps:
   - script: ./src/index.js # 入口文件
-    name: "app" # 程序名称
+    name: "decision-worklog-remind" # 程序名称
     env: # 环境变量
       COMMON_VARIABLE: true
     env_production:
