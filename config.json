@@ -2,7 +2,7 @@
   "webhook": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=117a26b0-b367-4a03-b6d5-38b9b5f9145d",
   "timers": [
     {
-      "hour": [20],
+      "hour": 20,
       "minute": 26,
       "dayOfWeek": [1, 3]
     },
