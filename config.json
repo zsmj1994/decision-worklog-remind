@@ -3,7 +3,7 @@
   "timers": [
     {
       "hour": 20,
-      "minute": 26,
+      "minute": 29,
       "dayOfWeek": [1, 3]
     },
   ],
