@@ -17,5 +17,5 @@ steps:
     runOptions: 'commands'
     commands: |
       cd /root/dailer/decision-worklog-remind
-      pm2 start deploy.ymal
+      pm2 start deploy.yaml
     readyTimeout: '20000'
