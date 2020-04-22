@@ -1,23 +1,16 @@
-# Node.js
-# Build a general Node.js project with npm.
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-
 trigger:
-- master
+  - master
 
 pool:
-  vmImage: 'ubuntu-latest'
+  vmImage: "ubuntu-latest"
 
 steps:
-
-- task: SSH@0
-  inputs:
-    sshEndpoint: '腾讯云'
-    runOptions: 'inline'
-    inline: |
-      git fetch --all
-      cd ./dailer/decision-worklog-remind
-      pm2 start deploy.yaml
-    readyTimeout: '200000'
-
+  - task: SSH@0
+    inputs:
+      sshEndpoint: "腾讯云"
+      runOptions: "inline"
+      inline: |
+        git fetch --all
+        cd ./dailer/decision-worklog-remind
+        pm2 start deploy.yaml
+      readyTimeout: "200000"
