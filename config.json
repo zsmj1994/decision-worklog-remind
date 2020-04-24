@@ -1,23 +1,25 @@
-{
-  "webhook": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b1b46829-b62a-4e70-a02b-d31fb2b2b35c",
-  "timers": [
-    {
-      "hour": 10,
-      "minute": 0,
-      "dayOfWeek": [1, 4]
-    }
-  ],
-  "msg": {
-    "msgtype": "news",
-    "news": {
-      "articles": [
-        {
-          "title": "又到了跟进客户bug的时候啦",
-          "description": "点击查看自己的客户bug，尽快走流程哦~",
-          "url": "https://kms.fineres.com/pages/viewpage.action?pageId=109797309",
-          "picurl": "http://e.hiphotos.baidu.com/image/pic/item/6609c93d70cf3bc78b5e65fede00baa1cd112a41.jpg"
-        }
-      ]
+[
+  {
+    "webhook": "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=b1b46829-b62a-4e70-a02b-d31fb2b2b35c",
+    "timers": [
+      {
+        "hour": 10,
+        "minute": 0,
+        "dayOfWeek": [1, 4]
+      }
+    ],
+    "msg": {
+      "msgtype": "news",
+      "news": {
+        "articles": [
+          {
+            "title": "又到了跟进客户bug的时候啦",
+            "description": "点击查看自己的客户bug，尽快走流程哦~",
+            "url": "https://kms.fineres.com/pages/viewpage.action?pageId=109797309",
+            "picurl": "http://e.hiphotos.baidu.com/image/pic/item/6609c93d70cf3bc78b5e65fede00baa1cd112a41.jpg"
+          }
+        ]
+      }
     }
   }
-}
+]
