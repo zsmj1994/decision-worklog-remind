@@ -7,7 +7,7 @@ pool:
 steps:
   - task: SSH@0
     inputs:
-      sshEndpoint: '腾讯云'
+      sshEndpoint: '阿里云新加坡'
       runOptions: 'inline'
       inline: |
         #!/bin/sh
